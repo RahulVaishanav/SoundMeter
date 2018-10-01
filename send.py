@@ -6,8 +6,8 @@ from email.mime.text import MIMEText
 from email.utils import COMMASPACE, formatdate 
 
 def send_mail(send_from, send_to, subject, text, files=None):
-    from_email="info@ascengineering.org"
-    from_password="Rahul_098"
+    from_email=""
+    from_password=""
     msg = MIMEMultipart()
     msg['From'] = send_from
     msg['To'] = ",".join(send_to)
@@ -30,5 +30,5 @@ def send_mail(send_from, send_to, subject, text, files=None):
     gmail=smtplib.SMTP('smtp.gmail.com',587)
     gmail.starttls()
     gmail.login(from_email, from_password)
-    gmail.sendmail("ascdailyreports@ascengineering.org",send_to,msg.as_string())
+    gmail.sendmail("asc",send_to,msg.as_string())
     gmail.close()

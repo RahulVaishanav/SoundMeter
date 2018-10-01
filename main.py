@@ -1,7 +1,7 @@
 def recordandsend(DATE,LEQ):
         recordvoice.recordaudio()
 
-        send.send_mail("127.0.0.1",["rvaishnav@ascengineering.org", "ascengineer@me.com","fahmad@ascengineering.org","cyang@ascengineering.org"],"WRSN03 Noise Exeedance at  %s current recording  %.1f" %(DATE,LEQ) ,"Team, <br/> The noise station has exceeded the noise levels, please see attached recording . <br/> Thanks, <br/><br/><br/> - Noise Station WRSN-03", "noise.wav")
+        send.send_mail("127.0.0.1",["g","cyang@ascengineering.org"],"WRSN03 Noise Exeedance at  %s current recording  %.1f" %(DATE,LEQ) ,"Team, <br/> The noise station has exceeded the noise levels, please see attached recording . <br/> Thanks, <br/><br/><br/> - Noise Station WRSN-03", "noise.wav")
 
 
 import send

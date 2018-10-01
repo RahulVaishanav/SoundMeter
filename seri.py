@@ -34,7 +34,7 @@ while (1==1):
 	
 		b= (str (datetime.datetime.now())[:-7])
                 try:
-			conn=psycopg2.connect(host="35.202.149.46",database="postgres", user="postgres", password="Rahul")
+			conn=psycopg2.connect(host="",database="", user="s", password="")
                 	cur=conn.cursor()
                 	cur.execute ("INSERT INTO  WRSN03 (Leq,Lmax , DATETIME) VALUES (%.1f,%.1f,'%s')" % (Leq,Lmax,b))
 			conn.commit()
